@@ -1,0 +1,267 @@
+body{
+    background: linear-gradient(to right, #9bc3e6, #d88585);
+    font-family: cursive;
+}
+
+.container-Clock, .container-1, .container-2, .container-3, .container-4, .container-5, .container-6, .container-8, .container-9, .container-10, .container-11{
+    margin: 0 auto;
+    width: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container-Clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.container-Clock #clock {
+    font-size: 5rem;
+    color: #32cd32;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pickcolor{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid black; 
+    align-items: center;
+}
+
+.flex-box-container-2 img{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    margin: 10px;    
+}
+
+.flex-box-rps img{
+    height: 300px;
+    width: 300px;
+}
+
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+    cursor: pointer;
+}
+
+.flex-box-cal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.flex-box-cal label,input,button,select{
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 5px;
+}
+
+.flex-box-cal select{
+    background-color: blanchedalmond;
+}
+
+#flex-cal-result{
+    height: 80px;;
+    border: 1px solid black;
+    font-size: 30px;
+    color: azure;
+    font-family: cursive;
+    padding: 10px;
+}
+
+.container-6 button{
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-right: 150px;
+}
+
+.container-6 {
+    height: 100px;
+}
+
+.container-7{
+    margin: 0 auto;
+    width: 70%;
+    border: 1px solid black;
+}
+hr{
+    height: 1px;
+    background-color: black;
+}
+
+.flex-box-quote{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.flex-box-quote blockquote{
+    padding: 20px;
+    background-color: #e49999;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-left: 10px solid #fcdbbf;
+}
+
+.flex-box-quote h3{
+    color: white;
+    background-color: #000;
+}
+
+.container-9{
+    display: flex;
+    flex-direction: column;
+}
+.flex-slider{
+    background-color: yellow;
+    width: 480px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: url(../slider/insta0.jpg)center/cover no-repeat;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    box-shadow: 5px 10px black;
+    position: relative;
+}
+
+.flex-slider .btnSlider{
+    display: inline;
+    background-color: black;
+    color: wheat;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 2px 3px black;
+    outline: none;
+}
+
+.flex-slider .btnSlider:hover{
+    background: linear-gradient(to right, blue, red);
+
+}
+.flex-slider .prevBtn{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+}
+
+.flex-slider .nextBtn{
+    position: absolute;
+    top: 50%;
+    right: -50px;
+}
+
+.flex-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.flex-calculator .calculator{
+    flex: 0 0 95%;
+}
+
+.flex-calculator .screen{
+    width: 100%;
+    background-color: rgb(41, 45, 56);
+    padding: 45px;
+    color: white;
+    font-size: 40px;
+    border: none;
+}
+
+.flex-calculator .buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-calculator .buttons button{
+    flex: 0 0 25%;
+    border: 1px solid black;
+    padding: 25px;
+    font-size: 40px;
+}
+
+.flex-calculator .buttons .btn-key{
+    background-color: #efc780;
+    color: black;
+}
+
+.flex-calculator .buttons .btn-num{
+    background-color: rgb(224, 224, 224);
+}
+
+.flex-calculator .buttons .btn-key:hover{
+    background-color: orange;
+    color: black;
+}
+
+.flex-calculator .buttons .btn-num:hover{
+    background-color: white;
+    color: black;
+}
+
+.flex-calculator .btn-equal{
+    background-color: #8cf78c;
+}
+
+.flex-calculator .btn-clear{
+    background-color: #ff5c5c;
+}
+
+.flex-calculator .btn-equal:hover{
+    background-color: green;
+}
+
+.flex-calculator .btn-clear:hover{
+    background-color: red;
+}
+
+.cat{
+    margin: 0 auto;
+    background-color: wheat;
+    background: url(../images/road.jpeg)center/cover no-repeat;
+    width: 70%;
+    height: 800px;
+    margin-bottom: 30px;
+}
+
+.cat img
+{
+    margin-top: 530px;
+    height: 120px;
+    width: 120px;
+    
+}
+
+
+
+
+
+
+
+
+
+

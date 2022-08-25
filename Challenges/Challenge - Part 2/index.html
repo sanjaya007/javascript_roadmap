@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Part 2</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Challenge 1 : Create Hex Code ------------------------------------------------------------------- -->
+
+    <div class="container-1">
+      <header>
+        <h1>Challenge 1: Create Hex Color</h1>
+      </header>
+
+      <div class="main-1">
+        <div class="title">
+          <h2>The Hex Color Code</h2>
+        </div>
+
+        <div class="hex">
+          <span id="hex"> ----- </span>
+        </div>
+
+        <button id="createHex">Click Here</button>
+      </div>
+    </div>
+
+    <!-- Challenge 2: Counter------------------------------------------------------------------------------- -->
+
+    <div class="container-2">
+      <header>
+        <h1>Challenge 2 : Counter</h1>
+      </header>
+
+      <div class="main-2">
+        <h2>Counter</h2>
+        <span id="countValue"> 0 </span>
+
+        <div class="btns">
+          <button class="btn decrease">Decrease</button>
+          <button class="btn reset">Reset</button>
+          <button class="btn increase">Increase</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Challenge 3: Reviews------------------------------------------------------------------------------- -->
+
+    <div class="container-3">
+      <header>
+        <h1>Challenge 3: Reviews</h1>
+      </header>
+
+      <div class="main-3">
+        <section>
+          <div class="title">
+            <h2>our reviews</h2>
+            <div class="underline"></div>
+          </div>
+
+          <article class="review">
+            <div class="imageContainer">
+              <img src="" id="person-img" />
+            </div>
+            <h4 id="author"></h4>
+            <p id="job"></p>
+            <p id="info"></p>
+            <div class="button-container">
+              <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <button class="random-btn">random</button>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <!-- Challenge 4: Toggle NavBar----------------------------------------------------------------------------- -->
+
+    <div class="container-4">
+      <header>
+        <h1>Challenge 4: Responsive Toggle NavBar</h1>
+      </header>
+
+      <div class="main-4">
+        <nav>
+          <div class="nav-center">
+            <div class="nav-header">
+              <img
+                src="http://www.picturetopeople.org/logos/input_logos/input_logo4.gif"
+                alt="logo"
+                class="logo"
+              />
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <ul class="links">
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">projects</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+
+            <ul class="social-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-behance"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-sketch"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <hr />
+
+      <h2 style="font-family: cursive; text-align: center">
+        Side nav bar (click toggle to create or remove)
+      </h2>
+
+      <hr />
+
+      <div class="main4">
+        <button class="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <img
+              src="http://www.picturetopeople.org/logos/input_logos/input_logo4.gif"
+              class="logo"
+              alt=""
+            />
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <!-- links -->
+          <ul class="links">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+            <li>
+              <a href="#">projects</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+          <!-- social media -->
+          <ul class="social-icons">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-behance"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-sketch"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Challenge 5: Question And Answers------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container-5">
+      <header>
+        <h1>Challenge 5: Question And Answers</h1>
+      </header>
+
+      <div class="main-5">
+        <section>
+          <div class="title">
+            <h2>general questions</h2>
+          </div>
+
+          <div class="section-center">
+            <article class="question">
+              <div class="question-title">
+                <p>What is your name ?</p>
+                <button class="question-btn">
+                  <span class="plus-icon">
+                    <i class="fas fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon">
+                    <i class="fas fa-minus-square"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Reprehenderit, eaque delectus, fuga, optio veritatis
+                  temporibus ducimus expedita eveniet nam dolore molestiae?
+                  Sequi dolorum non, obcaecati dolorem et natus corporis
+                  accusamus?
+                </p>
+              </div>
+            </article>
+
+            <article class="question">
+              <div class="question-title">
+                <p>What is your name ?</p>
+                <button class="question-btn">
+                  <span class="plus-icon">
+                    <i class="fas fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon">
+                    <i class="fas fa-minus-square"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Reprehenderit, eaque delectus, fuga, optio veritatis
+                  temporibus ducimus expedita eveniet nam dolore molestiae?
+                  Sequi dolorum non, obcaecati dolorem et natus corporis
+                  accusamus?
+                </p>
+              </div>
+            </article>
+
+            <article class="question">
+              <div class="question-title">
+                <p>What is your name ?</p>
+                <button class="question-btn">
+                  <span class="plus-icon">
+                    <i class="fas fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon">
+                    <i class="fas fa-minus-square"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Reprehenderit, eaque delectus, fuga, optio veritatis
+                  temporibus ducimus expedita eveniet nam dolore molestiae?
+                  Sequi dolorum non, obcaecati dolorem et natus corporis
+                  accusamus?
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Challenge 6 : Tabs--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container-6">
+      <header>
+        <h1>Challenge 6: Tabs</h1>
+      </header>
+
+      <div class="main-6">
+        <div class="title">
+          <h2>about</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            explicabo assumenda reiciendis vitae autem quaerat ad! Aliquam, iure
+            labore animi aliquid error ullam ratione, accusamus similique nihil
+            dolor cupiditate dignissimos.
+          </p>
+        </div>
+
+        <div class="about section">
+          <article class="about-img">
+            <img src="images/tabs/about.jpeg" />
+          </article>
+
+          <article class="aboutDesc">
+            <div class="btn-container">
+              <button class="tab-btn active" data-id="history">history</button>
+              <button class="tab-btn" data-id="vision">vision</button>
+              <button class="tab-btn" data-id="goals">goals</button>
+            </div>
+
+            <div class="about-content">
+              <div class="content active" id="history">
+                <h4>history</h4>
+                <p>
+                  I'm baby wolf pickled schlitz try-hard normcore marfa man bun
+                  mumblecore vice pop-up XOXO lomo kombucha glossier bicycle
+                  rights. Umami kinfolk salvia jean shorts offal venmo.
+                  Knausgaard tilde try-hard, woke fixie banjo man bun. Small
+                  batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse
+                  tacos. Viral direct trade hoodie ugh chambray, craft beer pork
+                  belly flannel tacos single-origin coffee art party migas plaid
+                  pop-up.
+                </p>
+              </div>
+
+              <div class="content" id="vision">
+                <h4>vision</h4>
+                <p>
+                  Man bun PBR&B keytar copper mug prism, hell of helvetica.
+                  Synth crucifix offal deep v hella biodiesel. Church-key
+                  listicle polaroid put a bird on it chillwave palo santo enamel
+                  pin, tattooed meggings franzen la croix cray. Retro yr
+                  aesthetic four loko tbh helvetica air plant, neutra palo santo
+                  tofu mumblecore. Hoodie bushwick pour-over jean shorts
+                  chartreuse shabby chic. Roof party hammock master cleanse
+                  pop-up truffaut, bicycle rights skateboard affogato readymade
+                  sustainable deep v live-edge schlitz narwhal.
+                </p>
+                <ul>
+                  <li>list item</li>
+                  <li>list item</li>
+                  <li>list item</li>
+                </ul>
+              </div>
+              <div class="content" id="goals">
+                <h4>goals</h4>
+                <p>
+                  Chambray authentic truffaut, kickstarter brunch taxidermy vape
+                  heirloom four dollar toast raclette shoreditch church-key.
+                  Poutine etsy tote bag, cred fingerstache leggings cornhole
+                  everyday carry blog gastropub. Brunch biodiesel sartorial
+                  mlkshk swag, mixtape hashtag marfa readymade direct trade man
+                  braid cold-pressed roof party. Small batch adaptogen coloring
+                  book heirloom. Letterpress food truck hammock literally hell
+                  of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork
+                  yuccie, banh mi salvia venmo photo booth quinoa chicharrones.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Challenge 7: Bulb Counter------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container-7">
+      <header>
+        <h1>Challenge 7: Bulb</h1>
+      </header>
+
+      <div class="bulb-container">
+        <img src="./images/bulboff.png" alt="bulb" />
+        <div class="switch">
+          <a href="#" class="switch-on"> ON </a>
+          <a href="#" class="switch-off red"> OFF </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Challenge 8: Thermometer ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container-8">
+      <header>
+        <h1>Challenge 8: Thermometer</h1>
+      </header>
+
+      <div class="thermo">
+        <h2>Thermo Animation</h2>
+        <span class="fa"></span>
+      </div>
+    </div>
+
+    <!-- Challenge 9: Keyboard Listener ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container-9">
+      <header>
+        <h1>Challenge 9: Keyboard Listener</h1>
+      </header>
+
+      <div class="key-text-area">
+        <div class="key-text-area-box">
+          <span class="key-span"></span>
+        </div>
+      </div>
+
+      <div class="key-box">
+        <div class="key-part">
+          <button>Q</button>
+          <button>W</button>
+          <button>E</button>
+          <button>R</button>
+          <button>T</button>
+          <button>Y</button>
+          <button>U</button>
+          <button>I</button>
+          <button>O</button>
+          <button>P</button>
+        </div>
+        <div class="key-part">
+          <button>A</button>
+          <button>S</button>
+          <button>D</button>
+          <button>F</button>
+          <button>G</button>
+          <button>H</button>
+          <button>J</button>
+          <button>K</button>
+          <button>L</button>
+        </div>
+        <div class="key-part">
+          <button>Z</button>
+          <button>X</button>
+          <button>C</button>
+          <button>V</button>
+          <button>B</button>
+          <button>N</button>
+          <button>M</button>
+        </div>
+        <div class="key-part">
+          <button style="width: 200px">Space</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Challenge 10: Counter banner ------------------------------------------------------------------------------------------------------ -->
+
+    <div class="container-10">
+      <header>
+        <h1>Challenge 10: Counter Banner</h1>
+      </header>
+
+      <div class="counter-banner">
+        <div class="item">
+          <i class="far fa-smile-beam"></i>
+          <div class="counter" data-target="500"></div>
+          <span>Happy Clients</span>
+        </div>
+        <div class="item">
+          <i class="fas fa-tasks"></i>
+          <div class="counter" data-target="200"></div>
+          <span>Projects Completed</span>
+        </div>
+        <div class="item">
+          <i class="fas fa-code"></i>
+          <div class="counter" data-target="700"></div>
+          <span>Lines of Code</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

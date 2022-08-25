@@ -1,0 +1,851 @@
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6,
+.container-7,
+.container-8,
+.container-9,
+.container-10 {
+  margin: 0 auto;
+  width: 75%;
+  border: 2px solid black;
+}
+
+header h1 {
+  text-align: center;
+  font-family: cursive;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding-bottom: 1rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.main-1,
+.main-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-family: cursive;
+  flex-flow: column;
+}
+
+.main-1 .title {
+  background-color: #ffe9e9;
+  margin-bottom: 1rem;
+}
+.main-1 h2 {
+  padding: 0 1rem 0 1rem;
+  font-size: 22px;
+}
+
+.main-1 .hex {
+  background-image: linear-gradient(120deg, #f36161, #5454ec);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.main-1 span {
+  padding: 2rem;
+  font-size: 23px;
+}
+
+.main-1 button {
+  background-color: #d1ffbe;
+  padding: 0.5rem;
+  font-family: cursive;
+  transition: all 1s ease;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main-1 button:hover {
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.container-2 .main-2 {
+  background-color: rgb(213, 236, 243);
+}
+
+.container-2 .main-2 h2 {
+  font-size: 50px;
+}
+
+.container-2 .main-2 span {
+  font-size: 6rem;
+  padding: 1rem;
+  margin-top: -60px;
+}
+
+.container-2 .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+
+.container-2 .btns button {
+  display: block;
+  background-color: wheat;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 1rem;
+}
+
+.container-2 .btns button:hover {
+  background-image: linear-gradient(120deg, wheat, orange);
+  color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.main-3 {
+  font-family: "Open Sans", sans-serif;
+  background: hsl(206, 33%, 96%);
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+
+.main-3 .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.main-3 .title h2 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-3 .underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: hsl(205, 78%, 60%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-3 section {
+  max-width: 620px;
+}
+
+.main-3 .review {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  margin-bottom: 5rem;
+}
+
+.main-3 .review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-3 .imageContainer {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.main-3 #person-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.main-3 .imageContainer::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: hsl(205, 78%, 60%);
+  color: #fff;
+}
+
+.main-3 .imageContainer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: hsl(205, 78%, 60%);
+  position: absolute;
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.5rem;
+}
+
+.main-3 #author {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.main-3 #job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+}
+
+.main-3 #info {
+  margin-bottom: 0.75rem;
+}
+
+.main-3 .prev-btn,
+.main-3 .next-btn {
+  font-size: 1.25rem;
+  color: hsl(205, 90%, 76%);
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.main-3 .prev-btn:hover,
+.main-3 .next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+
+.main-3 .random-btn {
+  margin-top: 0.5rem;
+  background: hsl(205, 100%, 96%);
+  color: hsl(205, 78%, 60%);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+  border-color: hsl(205, 78%, 60%);
+  cursor: pointer;
+}
+.main-3 .random-btn:hover {
+  background: hsl(205, 78%, 60%);
+  color: hsl(205, 86%, 17%);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+.main-4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-4 nav {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-4 .nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.main-4 .nav-toggle {
+  font-size: 1.5rem;
+  color: #49a6e9;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.main-4 .nav-toggle:hover {
+  color: hsl(205, 86%, 17%);
+  transform: rotate(90deg);
+}
+
+.main-4 img {
+  display: block;
+}
+
+.main-4 .logo {
+  height: 40px;
+}
+
+.main-4 ul {
+  list-style-type: none;
+}
+
+.main-4 .links a {
+  color: hsl(209, 34%, 30%);
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.main-4 .links a:hover {
+  background: hsl(205, 86%, 81%);
+  color: #49a6e9;
+  padding-left: 1.5rem;
+}
+
+.main-4 .social-icons {
+  display: none;
+}
+
+.main-4 .links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.main-4 .show-links {
+  height: 10rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-4 .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .main-4 .nav-header {
+    padding: 0;
+  }
+  .main-4 .nav-toggle {
+    display: none;
+  }
+  .main-4 .links {
+    height: auto;
+    display: flex;
+  }
+  .main-4 .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .main-4 .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .main-4 .social-icons {
+    display: flex;
+  }
+  .main-4 .social-icons a {
+    margin: 0 0.5rem;
+    color: #49a6e9;
+    transition: all 0.3s linear;
+  }
+  .main-4 .social-icons a:hover {
+    color: hsl(205, 90%, 76%);
+  }
+}
+
+/* Side bar  */
+
+.main4 {
+  font-family: "Open Sans", sans-serif;
+  background: #f3f3f3;
+}
+
+.main4 .sidebar-toggle {
+  float: right;
+  margin: 1rem 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #49a6e9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.main4 .sidebar-toggle:hover {
+  color: hsl(205, 90%, 76%);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main4 .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.main4 .close-btn {
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  color: #49a6e9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: hsl(360, 67%, 44%);
+}
+
+.main4 .close-btn:hover {
+  color: hsl(360, 71%, 66%);
+  transform: rotate(360deg);
+}
+
+.main4 .logo {
+  justify-self: center;
+  height: 40px;
+}
+
+.main4 ul {
+  list-style-type: none;
+}
+
+.main4 .links a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  color: hsl(210, 22%, 49%);
+  transition: all 0.3s ease;
+}
+.main4 .links a:hover {
+  background: hsl(205, 86%, 81%);
+  color: #49a6e9;
+  padding-left: 1.75rem;
+}
+.main4 .social-icons {
+  justify-self: center;
+  display: flex;
+  padding-bottom: 2rem;
+}
+.main4 .social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: #49a6e9;
+  transition: all 0.3s ease;
+}
+.main4 .social-icons a:hover {
+  color: hsl(205, 86%, 17%);
+}
+
+.main4 .sidebar {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: hsl(360, 67%, 44%);
+  transition: all 0.3s ease;
+  transform: translate(-200%);
+}
+.main4 .show-sidebar {
+  transform: translate(0);
+}
+@media screen and (min-width: 676px) {
+  .main4 .sidebar {
+    width: 400px;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.main-5 {
+  padding: 5rem 0;
+  font-family: "Open Sans", sans-serif;
+  background: hsl(210, 36%, 96%);
+}
+
+.main-5 .title {
+  margin-bottom: 4rem;
+}
+
+.main-5 .title h2 {
+  font-family: "Great Vibes", cursive;
+  color: #c59d5f;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.main-5 .section-center {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-5 .question {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-5 .question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.main-5 .question-title p {
+  margin-bottom: 0;
+  letter-spacing: 0.25rem;
+  color: hsl(209, 61%, 16%);
+}
+.main-5 .question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #c59d5f;
+  transition: all 0.3s linear;
+}
+.main-5 .question-btn:hover {
+  transform: rotate(90deg);
+}
+.main-5 .question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.main-5 .question-text p {
+  color: hsl(210, 22%, 49%);
+  margin-bottom: 0;
+}
+
+/* Hide text */
+
+.main-5 .question-text {
+  display: none;
+}
+
+.main-5 .show-text .question-text {
+  display: block;
+}
+
+.main-5 .minus-icon {
+  display: none;
+}
+
+.main-5 .show-text .minus-icon {
+  display: inline;
+}
+
+.main-5 .show-text .plus-icon {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+.main-6 {
+  padding: 5rem 0;
+  background: hsl(210, 36%, 96%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-6 .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.main-6 h2 {
+  letter-spacing: 0.25rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.main-6 .title p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-6 .section {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.main-6 .about-img {
+  margin-bottom: 2rem;
+}
+
+.main-6 .about-img img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+}
+
+.main-6 .aboutDesc {
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.main-6 .btn-container {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-6 .tab-btn {
+  padding: 1rem 0;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: block;
+  background: hsl(212, 33%, 89%);
+  cursor: pointer;
+  transition: all 0.3s linear;
+  letter-spacing: 0.25rem;
+}
+
+.main-6 .tab-btn.active {
+  background: #fff;
+}
+
+.main-6 .tab-btn:hover:not(.active) {
+  background-color: hsl(205, 100%, 96%);
+  color: #49a6e9;
+}
+
+.main-6 .tab-btn:nth-child(1) {
+  border-top-left-radius: 0.5rem;
+}
+
+.main-6 .tab-btn:nth-child(3) {
+  border-top-right-radius: 0.5rem;
+}
+
+.main-6 .about-content {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.main-6 .about-content h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-6 .about-content p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+
+.main-6 ul {
+  list-style: none;
+}
+
+/* challenge 7: bulb ------------------------------------------------------------------------------------------ */
+
+.bulb-container {
+  width: 100%;
+  height: 50vh;
+  background-color: #252627;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bulb-container img {
+  height: 300px;
+}
+
+.switch {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.switch a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #424242;
+  font-family: cursive;
+}
+
+.switch .switch-off {
+  background-color: #1d1d1d;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.switch .red {
+  color: red;
+}
+
+.switch .green {
+  color: green;
+}
+
+/* Challenge 8 : Thermometer------------------------------------------------------------------------------------------------ */
+
+.thermo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252627;
+}
+
+.thermo h2 {
+  font-family: cursive;
+  padding: 1rem 0;
+  color: #dadada;
+}
+
+.thermo span {
+  padding: 2rem 0 4rem 0;
+  font-size: 10rem;
+  color: #dadada;
+}
+
+/* challenge 9: Key Box -------------------------------------------------------------------------------------------------------------- */
+
+.key-text-area {
+  height: 20vh;
+  width: 100%;
+  background-color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.key-text-area-box {
+  background-color: #ffffff;
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.key-span {
+  font-family: cursive;
+}
+
+.key-box {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #dadada;
+}
+
+.key-box .key-part {
+  margin: 5px 0;
+}
+
+.key-box button {
+  font-size: 1rem;
+  font-family: cursive;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.key-box .press {
+  background-color: #ffffff;
+}
+/* Challenge 10 : Counter Banner----------------------------------------------------------------------------------------------------- */
+
+.counter-banner {
+  width: 100%;
+  background-color: hsl(205, 86%, 81%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5rem 0;
+}
+
+.counter-banner .item {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: cursive;
+}
+
+.counter-banner .item i {
+  font-size: 40px;
+}
+
+.counter-banner .counter {
+  font-size: 25px;
+  padding: 1rem 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1400px) {
+  .section {
+    width: 910vw;
+  }
+
+  .about-img {
+    margin-bottom: 0;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+.main-6 .content {
+  display: none;
+}
+
+.main-6 .content.active {
+  display: block;
+}

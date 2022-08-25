@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background-color: #252627;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* banner  */
+.heading-banner {
+  width: 100vw;
+  height: 6rem;
+  background-color: #000000;
+  color: #dadada;
+}
+
+.heading-banner h1 {
+  line-height: 6.2rem;
+  margin-left: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* button */
+.btn-box {
+  position: fixed;
+  top: 6.5rem;
+  right: 2.5rem;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  background-color: #252627;
+  cursor: pointer;
+}
+
+.btn-box button {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-box button.add-btn {
+  width: 12rem;
+  height: auto;
+}
+
+.btn-box button .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: #000000;
+  border-radius: 1.625rem;
+  cursor: pointer;
+}
+
+.btn-box button .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.btn-box button .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  top: 1.3rem;
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.btn-box button .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.btn-box button .btn-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #dadada;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-box button:hover .circle {
+  width: 100%;
+}
+
+.btn-box button:hover .circle .icon.arrow {
+  background-color: #dadada;
+  transform: translate(1rem, 0);
+}
+
+.btn-box button:hover .btn-text {
+  color: #ffffff;
+}
+
+/* note */
+.note {
+  background-color: #000000;
+  margin: 30px 20px;
+  height: 200px;
+  width: 400px;
+  overflow-y: scroll;
+  margin-top: 7rem;
+}
+
+.note .action {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .action button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-size: 1.2rem;
+  border: none;
+  height: 300px;
+  width: 100%;
+  padding: 20px;
+  background-color: #111111;
+  color: #dadada;
+}
+
+.fa-edit,
+.fa-trash {
+  color: #dadada;
+  padding: 10px;
+  background-color: rgba(0, 128, 0, 0.39);
+  cursor: 9;
+}
+
+.fa-trash {
+  background-color: rgba(255, 0, 0, 0.39);
+}
+
+.fa-edit:hover {
+  background-color: green;
+}
+
+.fa-trash:hover {
+  background-color: red;
+}
+
+.main {
+  padding: 20px;
+  color: #dadada;
+}
+
+.hidden {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666666;
+}

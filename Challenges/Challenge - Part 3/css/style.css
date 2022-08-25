@@ -1,0 +1,824 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container, .container-1, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .container-8, .container-9{
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+}
+
+/* -------------------------------------------------------- */
+
+.container .music{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.container header p{
+    font-size: 20px;
+}
+
+.container .pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.container .pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.container .pads h1{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    opacity: 0.2;
+}
+
+.container .pads .pad1{
+    background: #60d394;
+}
+
+.container .pads .pad2{
+    background: #d36060;
+}
+
+.container .pads .pad3{
+    background: #c060d3;
+}
+
+.container .pads .pad4{
+    background: #d3d160;
+}
+
+.container .pads .pad5{
+    background: #6860d3;
+}
+
+.container .pads .pad6{
+    background: #60b2d3;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 20%;
+        left: 20%;
+    }
+
+    50%{
+        bottom: 80%;
+        left: 50%;
+    }
+
+    100%{
+        bottom: 20%;
+        left: 80%;
+    }
+}
+
+.container .visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 0%;
+    left: 20%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* --------------------------------------------------------------- */
+
+.container-1 .images{
+    display: flex;
+    justify-content: space-around;
+}
+.container-1 .image-container{
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
+.container-1 .image-container img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.container-1 .transition-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.transition-image:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container-1 .fade::after{
+    content: "Breathe Wild";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.container-1 .fade:hover::after{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.container-1 .collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.container-1 .collection img{
+    width: 300px;
+    padding: 10px;
+    filter: grayscale(100);
+}
+
+.container-1 .collection img:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: 0.5s;
+    transform: scale(1.2)
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.container-2 .createPopup{
+    background: url(../images/popup/keyboard.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container-2 .createPopup .transitionPop
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2 .createPopup .transitionPop .createPopup1{
+    color: white;
+    text-align: center;
+}
+
+.container-2 .createPopup .transitionPop .createPopup1 h3, .container-2 button{
+    font-family: cursive;
+    margin-top: 30px;
+}
+
+.container-2 .createPopup .transitionPop .createPopup1 button{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: wheat;
+}
+
+.container-2 .createPopup .transitionPop .createPopup1 button:hover{
+    height: 55px;
+    width: 105px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: slateblue;
+    cursor: pointer;
+}
+
+
+.bg-popup{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+.bg-popup .popup-content{
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(to right, #fff6e5, #bde5f5);
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.bg-popup .popup-content input{
+    display: block;
+    margin: 35px auto;
+    border: 2px solid wheat;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.bg-popup .popup-content input[type=submit]{
+    background-color: wheat;
+}
+
+.bg-popup .popup-content input[type=submit]:hover{
+    background: linear-gradient(to right, wheat, #005d80);
+    font-family: cursive;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.bg-popup .popup-content .close{
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.bg-popup .popup-content .close:hover{
+    background-color: #90d3ee;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.container-3 .container-form{
+    font-family: cursive;
+    background-image: linear-gradient(to bottom right, #CC2B5E, #FF5858);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.container-3 .form{
+    background-color: #232734;
+    padding: 20px;
+    width: 40%;
+}
+
+.container-3 .container-form h1{
+    color: white;
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.container-3 span{
+    color: #6d6565;
+    font-size: 10px;
+    
+}
+
+.container-3 form {
+    margin: 0px -15px;
+}
+
+.container-3 form .form-group{
+    width: 100%;
+    background-image: linear-gradient(to right, #33344C, #232734);
+    border-bottom: 1px solid #414141;
+    padding: 0px 15px;
+    margin-top: 5px;
+}
+
+.container-3 form .input-field{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.container-3 form .valid{
+    color: #44E444;
+}
+
+.container-3 form .invalid{
+    color: #FF0000;
+}
+
+.container-3 form .login-btn{
+    margin: 10px 15px;
+    display: inline-block;
+    padding: 10px 14px;
+    color: #CC2B5E;
+    background: none;
+    font-size: 15px;
+    border: 2px solid #CC2B5E;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+.container-3 form .login-btn:hover{
+    color: #FFF;
+    background-color: #CC2B5E;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.container-4 .dragDropSection{
+    background-color: wheat;
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    flex-flow: column;
+}
+
+.container-4 .list-section{
+    display: flex;
+    width: 100%;
+    
+}
+
+.container-4 .list-section .list{
+    display: flex;
+    flex-flow: column;
+
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 8px;
+    margin: 10px 15px ;
+    transition: all 0.2s linear;
+}
+
+.container-4 .list-section .list .list-item{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 99px;
+    text-align: center;
+    margin: 4px;
+    color: black;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.container-5 .navbar-header{
+    background-color: #545454;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.3rem solid #6baa75;
+}
+
+.container-5 .navbar-header img{
+    width: 100px;
+}
+
+.container-5 .navbar-btn{
+    align-self: center;
+    border: 5px solid #6baa75;
+    cursor: pointer;
+}
+
+.container-5 .bar1, .bar2, .bar3{
+    width: 30px;
+    height: 5px;
+    margin: 0.5rem;
+    background-color: #6baa75;
+    transition: all 2s ease;
+}
+
+.container-5 .navbar-links{
+    list-style-type: none;
+    transition: all 2s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.container-5 .navbar-collapse{
+    height: 243px;
+}
+
+.container-5 .navbar-links .navbar-single-link{
+    display: block;
+    background: #69747c;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #6baa75;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.container-5 .navbar-links .navbar-single-link:hover{
+    padding-left: 1.5rem;
+    background-color: #545454;
+}
+
+.container-5 .home{
+    min-height: 80vh;
+    background: url('../images/nav/raven.jpg')center/cover no-repeat;
+}
+
+.container-5 .change .bar1{
+    transform: rotate(-45deg) translate(-8px, 10px);
+}
+
+.container-5 .change .bar2{
+    opacity: 0;
+}
+
+.container-5 .change .bar3{
+    transform: rotate(45deg) translate(-8px, -11px);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.container-6 header{
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.container-6 .video-container{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container-6 header h2{
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    color: #fff;
+    font-family: cursive;
+    opacity: 0.8;
+    font-size: 2rem;
+}
+
+.container-6 header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.container-6 .switch-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.container-6 .switch-btn span{
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #49a6e9;
+}
+
+.container-6 .switch{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    background-color: #49a6e9;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.container-6 .slide .switch{
+    left: 50%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.container-7 section{
+    height: 70vh;
+    background: url(../images/speech/robot.jpg)center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.container-7 section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.container-7 section .talk{
+    font-size: 2rem;
+    padding: 0.4rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: black;
+    color: #00fff3;
+    font-family: 'Autodestruct BB';
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+    letter-spacing: 0.25rem;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(-1);
+    }
+}
+
+.container-7 section .speechContent
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-7 section .speechMessage{
+    font-family: "Autodestruct BB";
+    color: #00fff3;
+    letter-spacing: 0.6rem;
+    font-size: 1.5rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.container-8 section{
+    height: 70vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 1rem;
+
+}
+
+.container-8 .fire-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container-8 .fireText{
+    font-size: 5rem;
+    font-family: "Blazed";
+    color: white;
+    letter-spacing: 0.9rem;
+    cursor: pointer;
+}
+
+@font-face{
+    font-family: "Blazed";
+    src: url('../fonts/Blazed.ttf');
+}
+
+.container-8 span{
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+.container-8 .fade{
+    opacity: 1;
+    transform: translateY(0px);
+    background: -webkit-linear-gradient(red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-8 .createFire{
+    font-family: "Autodestruct BB";
+    font-size: 2rem;
+    padding: 1rem;
+    position: absolute;
+    align-self: center;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    opacity: 0.7;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px 50px 0 red inset, 0 5px 50px 0 orange, 
+                0 5px 50px 0 orangered inset, 0 5px 50px 0 orangered;
+}
+
+.container-8 .createFire:hover{
+    box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 red, 
+                0 5px 50px 0 orangered inset, 0 5px 50px 0 red, 
+                0 5px 50px 0 red, 0 5px 50px 0 red;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container-9 .typingGame{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #1E0555;
+}
+
+.container-9 .startGame{
+    font-size: 3rem;
+    font-family: "Autodestruct BB";
+    padding: 1.5rem;
+    z-index: 1;
+    position: absolute;
+    align-self: center;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    opacity: 0.7;
+    cursor: pointer;
+    outline: none;
+    transition: all 1s ease;
+    box-shadow: 0 5px 50px 0 yellow inset, 0 5px 50px 0 orange, 
+                0 5px 50px 0 orange inset, 0 5px 50px 0 yellow;
+}
+
+.container-9 .startGame:hover{
+    transform: scale(0.5);
+}
+
+.container-9 .typingGame::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    
+}
+
+.container-9 .openGame::after{
+    display: none;
+}
+
+.container-9 .game-container{
+    background-color: #F0DB4F;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+}
+
+.container-9 .timer{
+    top: 3rem;
+    position: absolute;
+    font-size: 3rem;
+    color: #F0DB4F;
+    font-weight: bold;
+    font-family: "Autodestruct BB";
+}
+
+.container-9 .quote-display{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.container-9 .quote-input{
+    background-color: transparent;
+    border: 2px solid #A1922E;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    resize: none;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.container-9 .quote-input:focus{
+    border-color: black;
+}
+
+.container-9 .correct{
+    color: green;
+}
+
+.container-9 .incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+/* -------------------------------------- */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all 0.3s linear;
+  }
+  .hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+  }
+
+  /* ---------------------------------- */
+

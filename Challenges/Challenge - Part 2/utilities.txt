@@ -1,0 +1,41 @@
+ const reviews = [
+        {
+            id: 1,
+            name: "sanjaya paudel",
+            job: "web developer", 
+            img: "images/review/sanjaya.jpeg",
+            desc: "'The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.'"
+        },
+
+        {
+            id: 2,
+            name: "elisha paudel",
+            job: "dancer", 
+            img: "images/review/elisha.jpg",
+            desc: "'Dancers don’t need wings to fly. I do not try to dance better than anyone else. I only try to dance better than myself. I dance because there’s no greater feeling in the world than moving a piece of music and letting the rest of the world disappear.'"
+        },
+
+        {
+            id: 3,
+            name: "kushal neupane",
+            job: "music composer", 
+            img: "images/review/kushal.jpg",
+            desc: "'Music is at once the product of feeling and knowledge, for it requires from its disciples, composers and performers alike, not only talent and enthusiasm, but also that knowledge and perception which are the result of protracted study and reflection.'"
+        },
+        
+        {
+            id: 4,
+            name: "sakar regmi",
+            job: "web designer", 
+            img: "images/review/sakar.jpg",
+            desc: "'The life of a designer is a life of fight. Fight against the ugliness. Just like a doctor fights against disease. For us, the visual disease is what we have around, and what we try to do is cure it somehow with design.'"
+        },
+
+        {
+            id: 5,
+            name: "sara jones",
+            job: "ux designer", 
+            img: "images/review/sara.jpeg",
+            desc: "'Good UX design is all about putting the user first. Any aspect of a website, app or software that doesn’t consider the user’s needs is ultimately doomed to fail.'"
+        }
+    ]
